@@ -98,7 +98,7 @@ public class CollectionsUtil {
   private CollectionsUtil() {
   }
 }
-```\
+```
 
 The method `addInOrder()` shown above uses the `Collections.binarySearch()` ([Java Doc](http://docs.oracle.com/javase/7/docs/api/java/util/Collections.html#binarySearch(java.util.List,%20T))) method to locate the index of this item.  If the item (or a similar one) is already in the list (the index returned by the binary search method is positive), then simply add the new item next to the existing one.  For example, if another similar item already exists at index `3`, then the given item is added at index `4`.  On the other hand, if the item is not already in the list, the `Collections.binarySearch()` will return a negative index.  This negative index has a very important meaning as it provides the location where this item should be inserted in order to maintain the list sorted.  The insertion point is determined by the following code.
 
