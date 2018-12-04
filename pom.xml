@@ -12,8 +12,6 @@
   <url>http://www.javacreed.com/${project.artifactId}/</url>
   <inceptionYear>2014</inceptionYear>
 
-
-
   <contributors>
     <contributor>
       <name>Albert Attard</name>
